@@ -36,3 +36,6 @@ Batasan waktu per hari</br>
 | **6** | Low Knowledge (≤60), High Mental (≥80), Low Energy (≤60)   | Nilaimu turun, energimu pun habis, tapi kamu masih bahagia!                      |
 | **7** | Low Knowledge (≤60), Low Mental (≤60), High Energy (≥80)   | Energimu banyak, tapi kamu tidak produktif!                                      |
 | **8** | Low Knowledge (≤60), Low Mental (≤60), Low Energy (≤60)    | Kamu kelelahan, tidak bahagia, dan tidak fokus ujian! Jangan lupa istirahat!     |
+
+Repository on GitHub:</br>
+https://github.com/usertobby/atp-project-midterm
