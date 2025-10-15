@@ -1,5 +1,5 @@
-Project 1
-"College Routine Tracker: Surviving the Semester"
+## Project 1  
+# "College Routine Tracker: Surviving the Semester"
 
 Anggota Kelompok:
 1. I Made Tobby Anantha Adiwijaya (5027251064)
@@ -7,25 +7,25 @@ Anggota Kelompok:
 3. Sultan Ahmad Maulana Bahyshidqi (5027251070)
 4. Wildan Alfarezy (5027251088)
 
-Inisialisasi variabel
-Knowledge     : 70
-Mental Health : 75
-Energy        : 90
+Inisialisasi variabel</br>
++ Knowledge     : 70</br>
++ Mental Health : 75</br>
++ Energy        : 90</br>
 
-Batasan per variabel
-0 ≤ x ≤ 100
+Batasan per variabel</br>
++ 0 ≤ x ≤ 100
 
-Batasan waktu per hari
-24 Jam
+Batasan waktu per hari</br>
++ 24 Jam
 
--- Aturan Perubahan Poin --
+**Aturan Perubahan Poin**
 | Aktivitas | Knowledge | Mental Health | Energy |
 | --------- | --------- | ------------- | ------ |
 | Study     | +3        | -2            | -3     |
 | Hangout   | -2        | +3            | -2     |
 | Rest      | 0         | +2            | +2     |
 
--- Kondisi Output --
+**Kondisi Output**
 | Kasus | Kondisi Nilai                                              | Output                                                                           |
 | ----- | ---------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | **1** | High Knowledge (≥80), High Mental (≥80), High Energy (≥80) | Balance! Kamu jadi murid terbaik, punya relasi, serta tetap sehat!               |
