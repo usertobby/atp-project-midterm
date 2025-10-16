@@ -10,7 +10,7 @@ Anggota Kelompok:
 Inisialisasi variabel</br>
 + Knowledge     : 70</br>
 + Mental Health : 75</br>
-+ Energy        : 90</br>
++ Energy        : 70</br>
 
 Batasan per variabel</br>
 + 0 ≤ x ≤ 100
@@ -19,23 +19,24 @@ Batasan waktu per hari</br>
 + 24 Jam
 
 **Aturan Perubahan Poin**
-| Aktivitas | Knowledge | Mental Health | Energy |
-| --------- | --------- | ------------- | ------ |
-| Study     | +3        | -2            | -3     |
-| Hangout   | -2        | +3            | -2     |
-| Rest      | 0         | +2            | +2     |
+| Aktivitas | Knowledge  | Mental Health | Energy |
+| --------- | ---------- | ------------- | ------ |
+| Study     | +3         | -4            | -3     |
+| Hangout   | -2         | +3            | -2     |
+| Rest      | -1         | +2            | +3     |
 
 **Kondisi Output**
 | Kasus | Kondisi Nilai                                              | Output                                                                           |
 | ----- | ---------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **1** | High Knowledge (≥80), High Mental (≥80), High Energy (≥80) | Balance! Kamu jadi murid terbaik, punya relasi, serta tetap sehat!               |
-| **2** | High Knowledge (≥80), High Mental (≥80), Low Energy (≤60)  | Kamu pintar dan bahagia, tapi perlu istirahat yang cukup!                        |
-| **3** | High Knowledge (≥80), Low Mental (≤60), High Energy (≥80)  | Kamu pintar dan sehat, tapi kesehatan mentalmu patut dipertanyakan!              |
-| **4** | Low Knowledge (≤60), High Mental (≥80), High Energy (≥80)  | Nilaimu turun, tetapi kamu bahagia dan sehat!                                    |
-| **5** | High Knowledge (≥80), Low Mental (≤60), Low Energy (≤60)   | Kamu jadi murid terbaik, tapi kelelahan dan stres banget!                        |
-| **6** | Low Knowledge (≤60), High Mental (≥80), Low Energy (≤60)   | Nilaimu turun, energimu pun habis, tapi kamu masih bahagia!                      |
-| **7** | Low Knowledge (≤60), Low Mental (≤60), High Energy (≥80)   | Energimu banyak, tapi kamu tidak produktif!                                      |
-| **8** | Low Knowledge (≤60), Low Mental (≤60), Low Energy (≤60)    | Kamu kelelahan, tidak bahagia, dan tidak fokus ujian! Jangan lupa istirahat!     |
+| **1** | High Knowledge (≥80), High Mental (≥70), High Energy (≥70) | Balance! Kamu jadi murid terbaik, punya relasi, serta tetap sehat!               |
+| **2** | High Knowledge (≥80), High Mental (≥70), Low Energy (≤70)  | Kamu pintar dan bahagia, tapi perlu istirahat yang cukup!                        |
+| **3** | High Knowledge (≥80), Low Mental (≤70), High Energy (≥70)  | Kamu pintar dan sehat, tapi kesehatan mentalmu patut dipertanyakan!              |
+| **4** | Low Knowledge (≤80), High Mental (≥70), High Energy (≥70)  | Nilaimu turun, tetapi kamu bahagia dan sehat!                                    |
+| **5** | High Knowledge (≥80), Low Mental (≤70), Low Energy (≤70)   | Kamu jadi murid terbaik, tapi kelelahan dan stres banget!                        |
+| **6** | Low Knowledge (≤80), High Mental (≥70), Low Energy (≤70)   | Nilaimu turun, energimu pun habis, tapi kamu masih bahagia!                      |
+| **7** | Low Knowledge (≤80), Low Mental (≤70), High Energy (≥70)   | Energimu banyak, tapi kamu tidak produktif!                                      |
+| **8** | Low Knowledge (≤80), Low Mental (≤70), Low Energy (≤70)    | Kamu kelelahan, tidak bahagia, dan tidak fokus ujian! Jangan lupa istirahat!     |
 
 Repository on GitHub:</br>
 https://github.com/usertobby/atp-project-midterm
+

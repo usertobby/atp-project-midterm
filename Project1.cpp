@@ -1,11 +1,38 @@
 #include <iostream>
 using namespace std;
 
+string dayoutput(int days){
+    switch(days){
+        case 1:
+            return "Senin";
+            break;
+        case 2:
+            return "Selasa";
+            break;
+        case 3:
+            return "Rabu";
+            break;
+        case 4:
+            return "Kamis";
+            break;
+        case 5:
+            return "Jumat";
+            break;
+        case 6:
+            return "Sabtu";
+            break;
+        case 7:
+            return "Minggu";
+            break;
+    }
+
+}
+
 int main() {
     int days;
     int knowledge = 70;
     int mentalHealth = 75;
-    int energy = 90;
+    int energy = 70;
     int choice;
 
     // Banner
@@ -14,17 +41,16 @@ int main() {
     cout << "|---------------------------------------------|" << endl << endl;
     
     // Days loop
-    for (days = 0; days < 7; days++) {
+    for (days = 1; days < 8; days++) {
         cout << "===============================================" << endl;
-        cout << "                   Day: " << days + 1 << "              " << endl;
+        cout << "                   Day: " << dayoutput(days) << "              " << endl;
         cout << "===============================================" << endl << endl;
         cout << "-- Status saat ini --  " << endl;
         cout << "Knowledge      : " << knowledge << endl;
         cout << "Mental Health  : " << mentalHealth << endl;
         cout << "Energy         : " << energy << endl;
 
-        // Deklarasi variabel untuk lama waktu belajar, hangout, dan istirahat
-        int jamStudy = 0, jamHangout = 0, jamRest = 0;
+        // Deklarasi variabel untuk lama aktivitas
         int totalJamAktivitas = 0;
         int jamInput;
 
@@ -54,27 +80,25 @@ int main() {
 
             // Pilihan aktivitas
             switch (choice) {
-                case 1:
-                    jamStudy += jamInput;
-                    knowledge += jamInput * 2;
-                    mentalHealth -= jamInput * 2;
+                case 1:                                 // Study
+                    knowledge += jamInput * 3;
+                    mentalHealth -= jamInput * 4;
                     energy -= jamInput * 3;
-                    cout << "\nKamu belajar selama " << jamInput << " jam.\n";
+                    cout << "\nKamu belajar selama " << jamInput << " jam.\n\n";
                 break;
 
-                case 2:
-                    jamHangout += jamInput;
+                case 2:                                 // Hang Out
                     knowledge -= jamInput * 2;
                     mentalHealth += jamInput * 3;
                     energy -= jamInput * 2;
-                    cout << "\nKamu main dengan teman selama " << jamInput << " jam.\n";
+                    cout << "\nKamu main dengan teman selama " << jamInput << " jam.\n\n";
                 break;
 
-                case 3:
-                    jamRest += jamInput;
+                case 3:                                 // Rest
+                    knowledge -= jamInput * 1;
                     mentalHealth += jamInput * 2;
-                    energy += jamInput * 2;
-                    cout << "\nKamu istirahat selama " << jamInput << " jam.\n";
+                    energy += jamInput * 3;
+                    cout << "\nKamu istirahat selama " << jamInput << " jam.\n\n";
                 break;
 
                 default:
@@ -108,29 +132,32 @@ int main() {
     }
 
     // Kondisi ketiga variable akhir
-    cout << "\n-- Status akhir --\n";
+    cout << "\n===============================================" << endl;
+    cout << "----------------- Status akhir ----------------\n";
     cout << "Knowledge      : " << knowledge << endl;
     cout << "Mental Health  : " << mentalHealth << endl;
     cout << "Energy         : " << energy << endl;
 
     // Title akhir yang diperoleh
-    if (knowledge >= 80 && mentalHealth >= 80 && energy >= 80) {                            // 1
+    if (knowledge >= 80 && mentalHealth >= 70 && energy >= 70) {                            // 1
         cout << "\nBalance! Kamu jadi murid terbaik, punya relasi, serta tetap sehat!\n";
-    } else if (knowledge >= 80 && mentalHealth >= 80 && energy < 60) {                      // 2
+    } else if (knowledge >= 80 && mentalHealth >= 70 && energy < 70) {                      // 2
         cout << "\nKamu pintar dan bahagia, tapi perlu istirahat yang cukup!\n";
-    } else if (knowledge >= 80 && mentalHealth < 60 && energy >= 80) {                      // 3
+    } else if (knowledge >= 80 && mentalHealth < 70 && energy >= 70) {                      // 3
         cout << "\nKamu pintar dan sehat, tapi kesehatan mentalmu patut dipertanyakan!\n";
-    } else if (knowledge < 60 && mentalHealth >= 80 && energy >= 80) {                      // 4
+    } else if (knowledge < 80 && mentalHealth >= 70 && energy >= 70) {                      // 4
         cout << "\nNilaimu turun, tetapi kamu bahagia dan sehat!\n";
-    } else if (knowledge >= 80 && mentalHealth < 60 && energy < 60) {                       // 5
+    } else if (knowledge >= 80 && mentalHealth < 70 && energy < 70) {                       // 5
         cout << "\nKamu jadi murid terbaik, tapi kelelahan dan stres banget!\n";
-    } else if (knowledge < 60 && mentalHealth >= 80 && energy < 60) {                       // 6
+    } else if (knowledge < 80 && mentalHealth >= 70 && energy < 70) {                       // 6
         cout << "\nNilaimu turun, energimu pun habis, tapi kamu masih bahagia!\n";
-    } else if (knowledge < 60 && mentalHealth < 60 && energy >= 80) {                       // 7
+    } else if (knowledge < 80 && mentalHealth < 70 && energy >= 70) {                       // 7
         cout << "\nEnergimu banyak, tapi kamu tidak produktif!\n";
-    } else if (knowledge < 60 && mentalHealth < 60 && energy < 60) {                        // 8
+    } else if (knowledge < 80 && mentalHealth < 70 && energy < 70) {                        // 8
         cout << "\nKamu kelelahan, tidak bahagia, dan tidak fokus ujian! Jangan lupa istirahat!\n";
     }
+
+    cout << "===============================================" << endl;
 
     return 0;
 }
